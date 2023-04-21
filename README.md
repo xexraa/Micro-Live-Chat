@@ -19,12 +19,12 @@ Users can also create private rooms by generating a unique code and sharing it w
 From a technical standpoint, Micro Live-Chat uses a basic version of a database that is stored in the computer's memory. Therefore, when the program is restarted, the database is cleared, and messages are not stored.
 
 **Requirements**
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 **Built With**
-Flask
-Flask-SocketIO
-HTML
-CSS
-JS
-Bootstrap
+- Flask
+- Flask-SocketIO
+- HTML
+- CSS
+- JS
+- Bootstrap
