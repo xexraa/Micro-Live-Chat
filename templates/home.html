@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block main %}
+
+<div id="section1" class="section1">
+<div class="header">
+    <h1 class="title">Welcome to Micro Live-Chat!</h1>
+    <h2 class="subtitle">100% Anonymous | No Ads | Available 24/7</h2>
+</div>
+<div id="carouselAuto" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/img/item-1-1.jpg" class="d-block w-100" alt="bg1">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/item-2-2.jpg" class="d-block w-100" alt="bg2">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/item-3-3.jpg" class="d-block w-100" alt="bg1">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAuto" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselAuto" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div id="section2" class="section2">
+<form method="post" class="buttons">
+    <div class="username">
+        <h3 class="subtitle sec">First enter your name or nickname</h3>    
+        <input class="user-input" type="text" placeholder="Pick a name" name="name" value="{{name}}"/>
+    </div>
+    <div class="username">
+        <h3 class="subtitle sec">Next pick your chat room</h3>   
+        <select class="form-select" multiple aria-label="multiple select example" name="selection">
+            <option class="chat" value="room_technology">Tech-room</option> 
+            <option class="chat" value="room_hobby">Hobby-room</option>
+            <option class="chat" value="room_random">Private-room</option>
+        </select>
+    </div>
+    <div class="create">
+      <button type="submit" name="create" class="create-btn">Join</button>
+    </div>
+  </div>
+
+<div id="section3" class="section3"> 
+    <div class="username">
+        <h3 class="subtitle third">Or join an existing room</h3>
+        <input class="user-input" type="text" placeholder="Room Code" name="code" value="{{code}}"/>  
+        <button class="join-btn" type="submit" name="join">Join room</button>     
+    </div>
+</div>  
+</form>
+{% endblock %}
